@@ -1,0 +1,37 @@
+/* Início do Reset Global */
+*{
+    margin: 0; /* zera a margem externa */
+    padding: 0; /* sera a margem interna */
+    box-sizing: border-box; /* Nos permite incluir o preenchimento e a borda na largura e altura totais de um elemento .*/
+    list-style: none;
+}
+/* Fim do Reset Global */
+
+/* Início do estilo de fonte do corpo do HTML */
+body {
+    font-family: 'Montserrat', sans-serif; /* Define a fonte padrão */
+}
+/* Fim do estilo de fonte */
+
+
+/* Início do estilo de botão */
+.btn{
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white; /* Define a cor do texto do botão */
+    display: inline-block; /* Permite definir largura e altura */  
+    font-size: 20px; /* Define o tamanho da fonte do botão */
+    font-weight: 700; /* Define o peso da fonte do botão */
+    background-color: #FB2056; /* Define a cor de fundo do botão */
+    padding: 20px 50px; /* Define o preenchimento interno do botão */
+    border-radius: 50px; /* Define a curvatura da borda do botão */
+    margin: 40px 0px; /* Define a margem externa do botão */
+}
+/* Fim do estilo de botão */
+
+/* Início do estilo do risco entre o título e o texto */
+.risk{
+    font-weight: 900; /* Define o peso da fonte do risco */
+    color: #FB2056; /* Define a cor do risco */
+    padding: 10px; /* Define o preenchimento interno do risco */
+}
+/* Fim do estilo do risco */

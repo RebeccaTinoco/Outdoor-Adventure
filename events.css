@@ -1,0 +1,57 @@
+/* Eventos */
+.events {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.events h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 42px;
+  font-weight: 700;
+}
+.events .risk{
+  padding: 50px;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+}
+
+
+.event {
+  flex: 1 1 350px; 
+  max-width: 500px;
+  flex-direction: column;
+  background: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  padding: 25px;
+  text-align: center;
+}
+
+.event img {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  margin: 20px;
+}
+
+
+.event h3 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.event p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #444;
+  margin: 20px;
+}

@@ -1,0 +1,72 @@
+.hero {
+    position: relative; /* Permite posicionar elementos filhos absolutamente em relação a este container */
+    background-image: url("../images/hero-bg.jpg"); /* Define a imagem de fundo do container */
+    background-repeat: no-repeat; /* Impede que a repetição da imagem de fundo */
+    background-size: 140%; /* Aumenta o tamanho da imagem de fundo para além de 100% do container */
+    background-position: center; /* Centraliza a imagem de fundo */
+    height: 110%; /* Define a altura como 110% da altura da janela de visualização (viewport) */
+    color: white; /* Define a cor do texto como branca, para contrastar com o fundo escuro */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do container */
+}
+
+.hero::before {
+    content: ""; /* Cria um pseudo-elemento vazio que pode ser estilizado como uma camada */
+    position: absolute; /* Posiciona o pseudo-elemento em relação ao .hero (por isso usamos position: relative na classe .hero) */
+    top: 0; left: 0; right: 0; bottom: 0; /* Faz o pseudo-elemento cobrir toda a área do container */
+    background-color: rgba(0, 0, 0, 0.4); /* Aplica uma camada preta semi-transparente para escurecer a imagem de fundo */
+    z-index: 1; /* Garante que essa camada fique acima da imagem de fundo, mas abaixo do conteúdo */
+}
+
+.hero > * { /* Seleciona todos os elementos filhos diretos do container .hero */
+    position: relative; /* Faz com que os elementos filhos fiquem acima do ::before, pois este está com z-index menor */
+    z-index: 2; /* Garante que os elementos do conteúdo estejam acima da camada escura (::before) */
+}
+
+.logoHero{ /* Define o estilo do texto (logotipo) da página */
+    padding: 60px 60px 10px 60px; 
+    display: flex; /* Permite que os elementos filhos sejam organizados em linha ou coluna */
+    flex-direction: column; /* Organiza os elementos filhos em coluna */
+    text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
+    color: white;
+    line-height: 38px; /* Define o espaçamento entre linhas do texto */
+}
+
+/* Início da definição do peso e tamanho das fontes da logotipo*/
+.logoHero h2{
+    font-weight: bold;
+    font-size:40px;
+}
+
+.logoHero h3 {
+    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: 7.5px; /* Define o espaçamento entre as letras do texto */
+}
+/* Fim da definição do peso e tamanho das fontes da logotipo*/
+
+/* Estilo do texto principal na seção hero */
+.textoHero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+
+.textoHero .subtitle{
+    font-size: 36px;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.textoHero .gift{
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.textoHero .btn {
+    margin-bottom: 150px;
+}

@@ -1,0 +1,31 @@
+/* Citação */
+.quote {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0d3;
+  background-size: 100px;
+  padding: 60px 40px 40px 80px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 20px;
+  color: #333333;
+  max-width: 95%;
+  width: 95%;
+  margin: 60px auto;
+  padding: 60px 40px 40px 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.quote img {
+    width: 150px;
+}
+
+.quote span {
+  display: block;
+  padding-top: 15px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: right;
+  color: #666;
+}
